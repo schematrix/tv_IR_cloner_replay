@@ -24,11 +24,11 @@ Varsayılan pinler: **SEND_PIN = 3**, **RECV_PIN = 2**
 ## Kurulum
 **IRremote 3.9.0** yükleyin (4.5.x’te ham veri API’si değişmiştir):
 
-
+```bash
 arduino-cli lib uninstall IRremote@4.5.0      # Opsiyonel: Yeni sürümü kaldır
 arduino-cli lib install "IRremote@3.9.0"      # Gerekli sürüm
 arduino-cli lib list | grep IRremote          # Yalnızca 3.9.0 görünmeli
-
+```
 
 Derleme ve yükleme (Mac terminal örneği):
 ```bash
