@@ -1,13 +1,13 @@
 # TV_hack 
 
 Arduino ile TV kumandası IR sinyallerini **yakala** (RX/sniffer) ve **aynı şekilde geri gönder** (TX/cloner).  
-Bu repo iki ayrı skeç içerir: **gönderici (TX)** ve **alıcı (RX)**. TX tarafında **ESC = ON/OFF**, **0–9 = rakam tuşları** olarak map’lenmiştir. RX tarafı yakalanan sinyali ham dizi (`raw[]`) ve örnek `sendRaw(...)` çağrısı olarak seri porta basar.
+Bu repo iki ayrı skeç içerir: **gönderici (TX)** ve **alıcı (RX)**. TX tarafında, **0–9 = rakam tuşları** olarak map’lenmiştir. RX tarafı yakalanan sinyali ham dizi (`raw[]`) ve örnek `sendRaw(...)` çağrısı olarak seri porta basar.
 
 > **Not:** Ham veriyle birebir tekrar (replay) için **IRremote 3.9.0** gereklidir.
 
 ## Özellikler
 - **Ham veri yakalama** (RX) ve **sendRaw ile gönderim** (TX)
-- Seri porttan **ESC/0–9** ile anlık kontrol
+- Seri porttan **0–9** ile anlık kontrol
 - **Tekrar sayısı** (repeat) ve **taşıyıcı frekans** (kHz) ayarlanabilir
 - **UNO SRAM** kısıtına uygun minimal yapı
 
